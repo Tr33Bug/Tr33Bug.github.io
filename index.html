@@ -1,7 +1,99 @@
-<html> 
-  <body> 
-   <p>Blaalaaaaaaaaaa Test</p> 
-	<p> eine Neue Zeile <p>
-   </body> 
- </html> 
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GeoTagApp - San Andreas</title>
+	<link rel='stylesheet' href='./stylesheets/style.css' />
+	<link rel='stylesheet' href='./stylesheets/bootstrap.min.css' />
+
+</head>
+
+<body>
+
+	<div class="page-header col-sm-12">
+		<img class="icon" src="./images/location.png" width="100" alt="an image of a map and location">
+		<h2 class="headline">GeoTagApp - San Andreas</h2>
+		<nav class="menu">
+			<a href="#">About</a> | <a href="#">Help</a> | <a href="/">Home</a>
+		</nav>
+	</div>
+
+
+	<main class="main">
+
+		<section class="tagging col-sm-2 jumbotron">
+			<h2>Tagging</h2>
+
+			<!-- ############### Aufgabe1a Form1 Start -->
+			<form id="tag-form" action="/tagging" method="post">
+				<fieldset>
+					<legend>Enter New Geo-Tag: </legend>
+					<label for="LatitudeTextfield">Latitude:</label>
+					<input class="form-control" type="text" name="LatitudeName" placeholder="12.3456"
+						id="LatitudeTextfield" required>
+					<label for="LongitudeTextfield">Longitude:</label>
+					<input class="form-control" type="text" name="LongitudeName" placeholder="98.7654"
+						id="LongitudeTextfield" required>
+					<label for="NameTextfield">Name:</label>
+					<input class="form-control" type="text" name="NameName" placeholder="kand. inf. MacMustermann"
+						id="NameTextfield" maxlength="10" required>
+					<label for="HashtagTextfield">Hashtag:</label>
+					<input class="form-control" type="text" name="HashtagName" placeholder="#nofilter"
+						id="HashtagTextfield" maxlength="11" pattern="#[A-Z, a-z, 0-9]*">
+					<button class="btn btn-primary " style="margin-top: 8px" type="submit"
+						id="SubmitButton">Submit!</button>
+				</fieldset>
+			</form>
+			<!-- ############### Aufgabe1a Form1 Ende -->
+
+		</section>
+
+		<section class="discovery col-sm-5 ">
+			<!-- ############### Aufgabe1a Form2 Start -->
+			<form class="search" id="filter-form" action="/discovery" method="post" class="search">
+				<!-- <label for="SearchTextfield">Search:</label> -->
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Suche nach...">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">Los!</button>
+					</span>
+				</div>
+			</form>
+			<!-- ############### Aufgabe1a Form2 Ende -->
+
+			<div class="taglist">
+				<ul id="results">
+					<li>Castle (49.01379, 8.404435) #sight</li>
+					<li>IWI (49.01379, 8.390071) #edu</li>
+				</ul>
+			</div>
+
+
+
+
+		</section>
+
+		<div class="tagmap col-sm-5 ">
+			<img id="result-img" src="./images/mapview.jpg" alt="a map with locations" />
+			<div class="caption">Result map</div>
+		</div>
+
+	</main>
+
+	<!-- <footer class="footer jumbotron">
+		<div class="footer-copyright text-center">© 2019 Copyright:
+			<span>wigo1011</span>
+		</div>
+	</footer> -->
+
+	<div class="footer col-sm-12">
+		<div id="inhalt">
+			<p>© 2019 Copyright: wigo1011 @github: <a>https://github.com/Tr33Bug</a> </p>
+		</div>
+	</div>
+
+</body>
+
+</html>
