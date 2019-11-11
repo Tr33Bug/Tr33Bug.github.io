@@ -114,7 +114,7 @@ loop = function() {
         context.beginPath();
         context.rect(start4, start3, dotWidth, dotWidth);
         context.fill();
-
+        resetCanvas = true;
 
     }
     roundcount += 1;
