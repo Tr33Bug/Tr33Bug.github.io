@@ -15,30 +15,21 @@ roundcount = 0;
 
 
 function panicStop() {
-
     move = false;
-
 }
 
 function panicGo() {
-
     move = true;
-
 }
 
 function refresh() {
-
     resetCanvas = true;
-
-
 }
 
 function randomColor() {
-
     if (randomColor) {
         randomColor = false;
     } else randomColor = true;
-
 }
 
 
