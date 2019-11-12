@@ -34,14 +34,14 @@ function randomColor() {
 
 
 
-if (randomColor == false) {
+// if (randomColor == false) {
 
-    document.getElementById("changeRandomColor").innerHTML = "Change to default color!";
-    color = "#" + Math.floor(Math.random() * 1000000)
-} else {
-    document.getElementById("changeRandomColor").innerHTML = "Change to random color!";
-    color = "#FF00FF"
-}
+//     document.getElementById("changeRandomColor").innerHTML = "Change to default color!";
+//     color = "#" + Math.floor(Math.random() * 1000000)
+// } else {
+//     document.getElementById("changeRandomColor").innerHTML = "Change to random color!";
+//     color = "#FF00FF"
+// }
 
 
 
