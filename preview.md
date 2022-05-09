@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /preview
-permalink_name: /preview
-title: This is the page title
+permalink: /test
+permalink_name: /test
+title: This is the testpage
 ---
 
 # Header 1
