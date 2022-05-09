@@ -15,6 +15,5 @@ detail_image: assets/theme_logo.svg
            margin-right: auto;
            width: 30%;"
     src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" 
-    alt="CAT-Content">
-</img>
+    alt="CAT-Content"></img>
 
