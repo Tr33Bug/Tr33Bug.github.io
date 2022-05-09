@@ -4,7 +4,7 @@ permalink: /
 permalink_name: /home
 title: Tr33Bugs github page - HOME
 
-# detail_image: assets/theme_logo.svg
+detail_image: assets/theme_logo.svg
 
 ---
 
