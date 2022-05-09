@@ -2,6 +2,7 @@ title: "THIS IS A TITLE"
 tagline: "I make music/code"
 description: "Personal website from Tr33Bug"
 github_username: Tr33Bug
+twitter_username: Tr33Bug
 baseurl: "/home"
 url: "https://tr33bug.github.io"
 
@@ -9,6 +10,8 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
+
+remote_theme: tareqdandachi/jekyll-shell-theme
 
 sass:
   style: compressed
