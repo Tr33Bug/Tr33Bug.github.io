@@ -51,4 +51,11 @@ body {
 }
 
 a {
-   
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00d66b;
+}
