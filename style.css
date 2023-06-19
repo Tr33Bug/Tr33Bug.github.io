@@ -1,10 +1,54 @@
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: #222;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
 }
 
-/* Dark mode styles */
-:root {
-    --bg-color: #222;
-    --text-color: #fff;
+.terminal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
+
+.terminal-header {
+    height: 20px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.terminal-buttons {
+    display: flex;
+}
+
+.terminal-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff5f57;
+    margin-right: 5px;
+}
+
+.terminal-content {
+    padding: 10px;
+    overflow-y: auto;
+    height: calc(100% - 40px);
+}
+
+.terminal-command {
+    color: #00d66b;
+}
+
+a {
+   
